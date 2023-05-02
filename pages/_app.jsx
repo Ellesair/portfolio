@@ -1,13 +1,15 @@
 import React from "react";
 import "../styles/global.css";
-import Navbar from "../components/navbar";
-import Footer from "../components/footer";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer"
+import ProfileImage from "../components/ProfileImage";
 
 function _app({ Component, pageProps }) {
   return (
     <>
       <Navbar />
       <Component {...pageProps} />
+      <ProfileImage />
       <Footer />
     </>
   );

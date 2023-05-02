@@ -2,7 +2,7 @@ import React from 'react'
 
 function footer() {
   return (
-    <div>footer</div>
+    <div>insert link list with social media icon links</div>
   )
 }
 
