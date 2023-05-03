@@ -1,21 +1,34 @@
 import React from "react";
+import styles from "../styles/contact.module.css"
 
 function contact() {
   return (
     <>
+    <section className={styles.contactContainer}>
       <h2>Send me something!</h2>
-      <form>
+      <form className={styles.contactForm}>
         <label>
-          <input type="text" placeholder="Title"></input>
+          <input type="text" aria-label="Title" placeholder="Title"></input>
         </label>
         <label>
-          <input type="text" placeholder="Your Name"></input>
+          <input
+            type="text"
+            aria-label="Your Name"
+            placeholder="Your Name"
+          ></input>
         </label>
         <label>
-          <textarea></textarea>
+          <textarea
+            aria-label="Enter your text here"
+            placeholder="Enter your text here"
+            rows="20"
+          ></textarea>
         </label>
-        <button type="submit">SUBMIT</button>
+        <button aria-label="Submit" type="submit">
+          SUBMIT
+        </button>
       </form>
+    </section>
     </>
   );
 }
