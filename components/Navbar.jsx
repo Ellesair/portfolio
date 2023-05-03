@@ -1,30 +1,36 @@
 import Link from "next/link";
 import React from "react";
 import styles from "../styles/navbar.module.css";
+import { Questrial } from "next/font/google";
+
+const questrial = Questrial({
+  weight: "400",
+  subsets: ["latin"],
+});
 
 function navbar() {
   return (
     <>
-      <nav>
+      <nav className={questrial.className}>
         <ul className={styles.navbarContainer}>
           <li className={styles.link}>
             <Link aria-label="Home" href="/">
-              Home
+              HOME
             </Link>
           </li>
           <li className={styles.link}>
             <Link aria-label="About" href="/about">
-              About
+              ABOUT
             </Link>
           </li>
           <li className={styles.link}>
             <Link aria-label="Projects" href="/projects">
-              Projects
+              PROJECTS
             </Link>
           </li>
           <li className={styles.link}>
             <Link aria-label="Contact" href="/contact">
-              Contact
+              CONTACT
             </Link>
           </li>
         </ul>
